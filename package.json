@@ -1,0 +1,20 @@
+{
+  "name": "coba-vibe-engineering",
+  "version": "1.0.0",
+  "dependencies": {
+    "elysia": "latest",
+    "drizzle-orm": "latest",
+    "mysql2": "latest"
+  },
+  "devDependencies": {
+    "drizzle-kit": "latest",
+    "@types/bun": "latest"
+  },
+  "scripts": {
+    "dev": "bun --watch src/index.ts",
+    "start": "bun src/index.ts",
+    "db:generate": "drizzle-kit generate",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio"
+  }
+}
